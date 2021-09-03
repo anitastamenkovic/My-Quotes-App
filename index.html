@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>My Quotes</h1>
+
+    <div class="content">
+      <form id="add-quote-form">
+        <input type="text" name="quote" placeholder="Quote" />
+        <input type="text" name="author" placeholder="Author" />
+        <button>Add quote</button>
+      </form>
+
+      <ul id="quotes-list"></ul>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="src/dbcon.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>

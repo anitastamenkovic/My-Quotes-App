@@ -1,0 +1,152 @@
+body {
+  background: #12b886;
+  font-family: ubuntu;
+}
+
+h1 {
+  color: #fff;
+  font-size: 64px;
+  letter-spacing: 2px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.content {
+  background: #fff;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border-radius: 10px 120px 10px 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 20px;
+  background: #e9ecef;
+  font-size: 20px;
+  color: #495057;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  /* height: 46px; */
+}
+
+li:nth-child(even) {
+  padding: 20px;
+  background: #f1f3f5;
+}
+
+li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+li:first-child .cross {
+  border-radius: 0 10px 0 0;
+}
+
+li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+li:last-child .edit {
+  border-radius: 0 0 10px 0;
+}
+
+li input {
+  display: block;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  width: 90%;
+}
+
+li input:focus {
+  outline: none;
+  padding-bottom: 8px;
+  transition: all ease 0.2s;
+  border-bottom: 2px solid #12b886;
+}
+
+li input:nth-child(1) {
+  word-wrap: break-word;
+  word-break: break-all;
+  max-height: 80px;
+  font-weight: 600;
+  color: #12b886;
+}
+
+li input:nth-child(2) {
+  margin-top: 6px;
+  color: #adb5bd;
+}
+
+li div {
+  background: #f8f9fa;
+  width: 40px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cross {
+  color: #e03131;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.edit {
+  color: #12b886;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+
+form input {
+  float: left;
+  width: 38%;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #099268;
+  margin: 0 1%;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+form input:focus {
+  outline: none;
+  border-bottom: 3px solid #099268;
+  padding-bottom: 8px;
+  transition: all ease 0.2s;
+}
+
+form:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+button {
+  border: 0;
+  background: #fff;
+  color: #099268;
+  border-radius: 10px;
+  padding: 13px;
+  width: 14%;
+  box-shadow: 2px 2px 2px rgba(9, 146, 104, 0.1);
+  font-weight: bold;
+  font-family: ubuntu;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  border: 1px solid #099268;
+}
